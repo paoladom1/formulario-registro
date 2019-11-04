@@ -8,7 +8,9 @@ class Home extends React.Component {
     this.state = {
       carnet: "",
       schedule: "",
-      registers: []
+      registers: [],
+      isLate: false,
+      lastId: 0
     };
   }
 
@@ -18,18 +20,39 @@ class Home extends React.Component {
     });
   };
 
+  handleToggle = e => {
+    this.setState({
+      [e.target.name]: !this.state.isLate
+    });
+  };
+
+  handleRegisterDelete = e => {
+    this.setState(
+      {
+        registers: this.state.registers.filter(register => {
+          return register.id !== Number(e.target.name);
+        })
+      },
+      () => console.log(this.state)
+    );
+  };
+
   handleSubmit = e => {
     e.preventDefault();
 
-    if (this.state.carnet.length !== 0 && this.state.schedule !== 0) {
+    if (this.state.carnet.length !== 0 && this.state.schedule.length !== 0) {
       this.setState({
         registers: this.state.registers.concat({
           carnet: this.state.carnet,
           schedule: this.state.schedule,
-          entryTime: new Date()
+          entryTime: new Date(),
+          isLate: this.state.isLate,
+          id: this.state.lastId
         }),
         carnet: "",
-        schedule: ""
+        schedule: "",
+        isLate: false,
+        lastId: this.state.lastId + 1
       });
     }
   };
@@ -41,8 +64,12 @@ class Home extends React.Component {
           data={this.state}
           handleChange={this.handleChange}
           handleSubmit={this.handleSubmit}
+          handleToggle={this.handleToggle}
         />
-        <ScheduleTable registers={this.state.registers} />
+        <ScheduleTable
+          registers={this.state.registers}
+          handleRegisterDelete={this.handleRegisterDelete}
+        />
       </div>
     );
   }

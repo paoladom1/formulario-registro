@@ -2,7 +2,10 @@ import React from "react";
 
 const ScheduleTable = props => {
   return (
-    <table className="table is-striped is-fullwidth" style={{marginTop: "50px"}}>
+    <table
+      className="table is-striped is-fullwidth"
+      style={{ marginTop: "50px" }}
+    >
       <thead>
         <tr>
           <th>Carnet</th>
@@ -19,8 +22,16 @@ const ScheduleTable = props => {
               <td>{register.carnet}</td>
               <td>{register.schedule}</td>
               <td>{register.entryTime.toUTCString()}</td>
-              <td>tarde</td>
-              <td>boton</td>
+              <td>{register.isLate ? "Tarde" : "A tiempo"}</td>
+              <td>
+                <button
+                  className="button is-secondary"
+                  onClick={props.handleRegisterDelete}
+                  name={register.id}
+                >
+                  Eliminar
+                </button>
+              </td>
             </tr>
           );
         })}

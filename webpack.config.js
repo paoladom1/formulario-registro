@@ -21,5 +21,11 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin('css/mystyles.css'),
-  ]
+  ],
+  resolve: {
+    alias: {
+      Src: path.resolve(__dirname, './src/'), 
+      Components: path.resolve(__dirname, './src/components/'), 
+    }
+  }
 };

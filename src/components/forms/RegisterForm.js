@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./RegisterForm.module.scss";
+import ControlledSwitch from "react-bulma-switch";
 
 const RegisterForm = props => {
   return (
@@ -30,25 +31,38 @@ const RegisterForm = props => {
                   value={props.data.schedule}
                   onChange={props.handleChange}
                 >
-                  <option value=""></option>
-                  <option value="Lunes de 9:00 a 11.00">Lunes de 9:00 a 11.00</option>
-                  <option value="Martes de 13:30 a 15:30">Martes de 13:30 a 15:30</option>
-                  <option value="Miércoles de 9:00 a 11.00">Miércoles de 9:00 a 11.00</option>
-                  <option value="Jueves de 13:30 a 15:30">Jueves de 13:30 a 15:30</option>
-                  <option value="Viernes de 9:00 a 11.00">Viernes de 9:00 a 11.00</option>
-                  <option value="Viernes de 15:30 a 17:30">Viernes de 15:30 a 17:30</option>
+                  <option disabled value="">Seleccione el horario</option>
+                  <option value="Lunes de 9:00 a 11.00">
+                    Lunes de 9:00 a 11.00
+                  </option>
+                  <option value="Martes de 13:30 a 15:30">
+                    Martes de 13:30 a 15:30
+                  </option>
+                  <option value="Miércoles de 9:00 a 11.00">
+                    Miércoles de 9:00 a 11.00
+                  </option>
+                  <option value="Jueves de 13:30 a 15:30">
+                    Jueves de 13:30 a 15:30
+                  </option>
+                  <option value="Viernes de 9:00 a 11.00">
+                    Viernes de 9:00 a 11.00
+                  </option>
+                  <option value="Viernes de 15:30 a 17:30">
+                    Viernes de 15:30 a 17:30
+                  </option>
                 </select>
               </div>
             </div>
           </div>
 
           <div className="field">
-            <input
-              id="switchRtlExample"
-              name="switchRtlExample"
-              type="checkbox"
-              className="switch is-rounded"
-            />
+            <ControlledSwitch
+              name="isLate"
+              value={props.data.isLate}
+              onChange={props.handleToggle}
+            >
+              Tarde?
+            </ControlledSwitch>
             <label htmlFor="switchRtlExample" className="label">
               Llegó tarde?
             </label>
