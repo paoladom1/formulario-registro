@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "http//paoladom1.github.io/formulario-registro/static/css/main.6ea65391.chunk.css",
-    "main.js": "http//paoladom1.github.io/formulario-registro/static/js/main.480c8eac.chunk.js",
-    "main.js.map": "http//paoladom1.github.io/formulario-registro/static/js/main.480c8eac.chunk.js.map",
-    "runtime-main.js": "http//paoladom1.github.io/formulario-registro/static/js/runtime-main.95ccbeb4.js",
-    "runtime-main.js.map": "http//paoladom1.github.io/formulario-registro/static/js/runtime-main.95ccbeb4.js.map",
-    "static/js/2.3907e850.chunk.js": "http//paoladom1.github.io/formulario-registro/static/js/2.3907e850.chunk.js",
-    "static/js/2.3907e850.chunk.js.map": "http//paoladom1.github.io/formulario-registro/static/js/2.3907e850.chunk.js.map",
-    "index.html": "http//paoladom1.github.io/formulario-registro/index.html",
-    "precache-manifest.9f0c8a5ce12d63a5e76cc2509c17fc54.js": "http//paoladom1.github.io/formulario-registro/precache-manifest.9f0c8a5ce12d63a5e76cc2509c17fc54.js",
-    "service-worker.js": "http//paoladom1.github.io/formulario-registro/service-worker.js",
-    "static/css/main.6ea65391.chunk.css.map": "http//paoladom1.github.io/formulario-registro/static/css/main.6ea65391.chunk.css.map"
+    "main.css": "/formulario-registro/static/css/main.6ea65391.chunk.css",
+    "main.js": "/formulario-registro/static/js/main.80118c7d.chunk.js",
+    "main.js.map": "/formulario-registro/static/js/main.80118c7d.chunk.js.map",
+    "runtime-main.js": "/formulario-registro/static/js/runtime-main.ce3eb7ec.js",
+    "runtime-main.js.map": "/formulario-registro/static/js/runtime-main.ce3eb7ec.js.map",
+    "static/js/2.3907e850.chunk.js": "/formulario-registro/static/js/2.3907e850.chunk.js",
+    "static/js/2.3907e850.chunk.js.map": "/formulario-registro/static/js/2.3907e850.chunk.js.map",
+    "index.html": "/formulario-registro/index.html",
+    "precache-manifest.35ea8f211264b46af8e4a64d03eea323.js": "/formulario-registro/precache-manifest.35ea8f211264b46af8e4a64d03eea323.js",
+    "service-worker.js": "/formulario-registro/service-worker.js",
+    "static/css/main.6ea65391.chunk.css.map": "/formulario-registro/static/css/main.6ea65391.chunk.css.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.95ccbeb4.js",
+    "static/js/runtime-main.ce3eb7ec.js",
     "static/js/2.3907e850.chunk.js",
     "static/css/main.6ea65391.chunk.css",
-    "static/js/main.480c8eac.chunk.js"
+    "static/js/main.80118c7d.chunk.js"
   ]
 }
