@@ -24,8 +24,8 @@ const RegisterForm = props => {
 
           <div className="field">
             <label className="label">Seleccione el horario:</label>
-            <div className="control">
-              <div className="select">
+            <div className="control is-expanded">
+              <div className="select is-fullwidth">
                 <select
                   name="schedule"
                   value={props.data.schedule}
