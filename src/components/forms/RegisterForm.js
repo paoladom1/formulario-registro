@@ -30,6 +30,7 @@ const RegisterForm = props => {
                   value={props.data.schedule}
                   onChange={props.handleChange}
                 >
+                  <option value=""></option>
                   <option value="Lunes de 9:00 a 11.00">Lunes de 9:00 a 11.00</option>
                   <option value="Martes de 13:30 a 15:30">Martes de 13:30 a 15:30</option>
                   <option value="Miércoles de 9:00 a 11.00">Miércoles de 9:00 a 11.00</option>
